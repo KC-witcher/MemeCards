@@ -1,0 +1,73 @@
+.header-title,
+.sort-buttons,
+.all-cards,
+.fav-cards {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.header-title {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 8px 8px rgba(128, 128, 128, 0.4);
+  font-size: 20px;
+  margin-bottom: 10px 0px;
+}
+
+.all-cards,
+.fav-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-body {
+  cursor: pointer;
+  display: grid;
+  margin: 20px;
+  width: 250px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 3px 3px rgba(154, 154, 154, 0.3);
+}
+
+.card-body:hover,
+.fav-cards .card-body:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 8px 8px rgba(52, 235, 88, 0.4);
+}
+
+.fav-cards .card-body:hover {
+  box-shadow: 0px 4px 8px 8px rgba(235, 52, 52, 0.4);
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 700;
+
+  text-align: center;
+  align-self: end;
+}
+
+.card-box-count {
+  font-size: 20px;
+}
+
+.sort-buttons {
+  display: block;
+  margin-top: 10px;
+}
+
+.total-box-counts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.sort-buttons button {
+  cursor: pointer;
+}
